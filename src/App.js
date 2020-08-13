@@ -192,12 +192,11 @@ class App extends PureComponent {
         <nav style={{ margin: "0px" }} class="navbar navbar-dark bg-primary">
           <a class="navbar-brand 	d-xs-none d-md-block hide" href="/#">
             <img
-              class="d-xs-none d-md-block "
               src={logoN}
-              width="30"
-              height="30"
+              width="30px"
+              height="30px"
               class="d-inline-block align-top"
-              alt=""
+              alt="logo"
               loading="lazy"
             />
           </a>
