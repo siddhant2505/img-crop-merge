@@ -6,9 +6,9 @@ import "react-image-crop/dist/ReactCrop.css";
 // import frame from "./frame.png";
 // import frame1 from "./frame1.png";
 // import frame2 from "./frame2.png";
-import frame3 from "./frame3.png";
-import frame4 from "./frame4.png";
-import frame5 from "./frame5.png";
+import frame3 from "./frame3-600.png";
+import frame4 from "./frame4-600.png";
+import frame5 from "./frame5-600.png";
 import urPic from "./yourPic.jpg";
 import logoN from "./logoN.png";
 import dp from "./dp.png";
@@ -130,8 +130,8 @@ class App extends PureComponent {
     const scaleX = image.naturalWidth / image.width;
     const scaleY = image.naturalHeight / image.height;
 
-    canvas.width = 300;
-    canvas.height = 300;
+    canvas.width = 600;
+    canvas.height = 600;
     const ctx = canvas.getContext("2d");
 
     ctx.drawImage(
@@ -142,8 +142,8 @@ class App extends PureComponent {
       crop.height * scaleY,
       0,
       0,
-      300,
-      300
+      600,
+      600
     );
 
     return new Promise((resolve, reject) => {
@@ -201,7 +201,7 @@ class App extends PureComponent {
               loading="lazy"
             />
           </a>
-          <h3 style={{ float: "left" }} className="mx-auto ">
+          <h3 style={{ float: "left" }} className="hid ">
             <span style={{ color: "orange" }}> Happy</span>{" "}
             <span style={{ color: "white" }}>Independence</span>
             <span style={{ color: "green" }}> Day</span>
@@ -273,6 +273,7 @@ class App extends PureComponent {
                   this.state.selimg === frame3 ? "selected" : ""
                 } `}
                 width="150px"
+                height="150px"
                 role="button"
                 src={frame3}
               />
@@ -286,6 +287,7 @@ class App extends PureComponent {
                   this.state.selimg === frame5 ? "selected" : ""
                 } `}
                 width="150px"
+                height="150px"
                 role="button"
                 src={frame5}
               />
@@ -295,10 +297,11 @@ class App extends PureComponent {
                 id="pic3"
                 onClick={() => this.handleSelect(frame4)}
                 //  onClick={this.handleSelect(frame3)}
-                className={`layout ${
+                className={`layout mb-5 ${
                   this.state.selimg === frame4 ? "selected" : ""
                 } `}
                 width="150px"
+                height="150px"
                 role="button"
                 src={frame4}
               />
@@ -310,6 +313,7 @@ class App extends PureComponent {
               <img className="layout" width="150px" src={frame3} /> */}
             </div>
             <div class="col-sm">
+              <h2>Press the below Button</h2>
               <h2
                 onClick={() => {
                   console.log("submitting");

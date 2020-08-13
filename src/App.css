@@ -53,6 +53,9 @@ h1 {
   .hide {
     display: none;
   }
+  .hid {
+    margin: 10px auto;
+  }
 }
 @media (min-width: 991.98px) {
   .hid {
