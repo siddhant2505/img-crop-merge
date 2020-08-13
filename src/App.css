@@ -49,3 +49,13 @@ h1 {
   text-align: left;
   font-weight: bold;
 }
+@media (max-width: 991.98px) {
+  .hide {
+    display: none;
+  }
+}
+@media (min-width: 991.98px) {
+  .hid {
+    margin-left: 35%;
+  }
+}

@@ -11,7 +11,7 @@ import frame4 from "./frame4.png";
 import frame5 from "./frame5.png";
 import urPic from "./yourPic.jpg";
 import logoN from "./logoN.png";
-import dp from "./dp.jpg";
+import dp from "./dp.png";
 // import img2 from "./11.PNG";
 import mergeImages from "merge-images";
 // import ResizeImage from "react-resize-image";
@@ -190,8 +190,9 @@ class App extends PureComponent {
     return (
       <div className="App">
         <nav style={{ margin: "0px" }} class="navbar navbar-dark bg-primary">
-          <a class="navbar-brand" href="/#">
+          <a class="navbar-brand 	d-xs-none d-md-block hide" href="/#">
             <img
+              class="d-xs-none d-md-block "
               src={logoN}
               width="30"
               height="30"
@@ -200,18 +201,19 @@ class App extends PureComponent {
               loading="lazy"
             />
           </a>
-          <h2>
+          <h3 style={{ float: "left" }} className="mx-auto ">
             <span style={{ color: "orange" }}> Happy</span>{" "}
             <span style={{ color: "white" }}>Independence</span>
             <span style={{ color: "green" }}> Day</span>
-          </h2>
+          </h3>
 
-          <span class=" mr-sm-2">
+          <span class="text-center mr-sm-2 d-block mx-auto">
             {" "}
             <img
               width="50px"
               alt="dp"
               style={{
+                //marginLeft: "100px",
                 clipPath: "circle(25px at center)",
                 marginRight: "10px",
               }}
