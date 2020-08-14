@@ -9,6 +9,22 @@ import "react-image-crop/dist/ReactCrop.css";
 import frame3 from "./frame3-600.png";
 import frame4 from "./frame4-600.png";
 import frame5 from "./frame5-600.png";
+//import fin3 from "./6.png";
+import fin2 from "./2.png";
+import fin1 from "./5.png";
+import fin4 from "./fin4.png";
+import fin5 from "./1.png";
+//import fin4 from "./fin4.png";
+//import fin5 from "./fin5.png";
+// import fin6 from "./Fin6.png";
+// import fin7 from "./Fin7.png";
+// import fin8 from "./fin8.png";
+// import fin9 from "./fin9.png";
+// import fin12 from "./fin12.png";
+
+// import fin15 from "./fin15.png";
+// import fin10 from "./1.png";
+import fin11 from "./fin11.png";
 import urPic from "./yourPic.jpg";
 import logoN from "./logoN.png";
 import dp from "./dp.png";
@@ -221,7 +237,7 @@ class App extends PureComponent {
             By Nitesh Varshney
           </span>
         </nav>
-        <div class="container my-5">
+        <div class="container-fluid my-5">
           <div class="row">
             <div
               style={{ alignItems: "center", justifyContent: "center" }}
@@ -262,48 +278,131 @@ class App extends PureComponent {
                   {this.state.layout}
                 </div>
               )}
-              <div className="my-4"> Layout 1</div>
-              <img
-                id="pic1"
-                alt="layout"
-                onClick={() => this.handleSelect(frame3)}
-                //onClick={this.handleSelect(frame3)}
-                className={`layout ${
-                  this.state.selimg === frame3 ? "selected" : ""
-                } `}
-                width="150px"
-                height="150px"
-                role="button"
-                src={frame3}
-              />
-              <div className="my-4"> Layout 2</div>
+              <div style={{ float: "left" }} class="mx-3">
+                <div className="my-4"> Layout 1</div>
+                <img
+                  id="pic1"
+                  alt="layout"
+                  onClick={() => this.handleSelect(frame3)}
+                  //onClick={this.handleSelect(frame3)}
+                  className={`layout ${
+                    this.state.selimg === frame3 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={frame3}
+                />
+              </div>
+              <div style={{ float: "right" }} class="mx-3">
+                <div className="my-4"> Layout 2</div>
+                <img
+                  alt="layout"
+                  id="pic2"
+                  onClick={() => this.handleSelect(frame5)}
+                  className={`layout ${
+                    this.state.selimg === frame5 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={frame5}
+                />
+              </div>
+              <div style={{ float: "left" }} class="mx-3">
+                <div className="my-4"> Layout 3</div>
+                <img
+                  alt="layout"
+                  id="pic3"
+                  onClick={() => this.handleSelect(frame4)}
+                  //  onClick={this.handleSelect(frame3)}
+                  className={`layout  ${
+                    this.state.selimg === frame4 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={frame4}
+                />
+              </div>
+              <div style={{ float: "right" }} class="mx-3">
+                <div className="my-4"> Layout 4</div>
+                <img
+                  alt="layout"
+                  id="pic2"
+                  onClick={() => this.handleSelect(fin1)}
+                  className={`layout ${
+                    this.state.selimg === fin1 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={fin1}
+                />
+              </div>
+              <div style={{ float: "left" }} class="mx-3">
+                <div className="my-4"> Layout 5</div>
+                <img
+                  alt="layout"
+                  id="pic2"
+                  onClick={() => this.handleSelect(fin2)}
+                  className={`layout ${
+                    this.state.selimg === fin2 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={fin2}
+                />
+              </div>
+              <div style={{ float: "right" }} class="mx-3">
+                <div className="my-4"> Layout 6</div>
+                <img
+                  alt="layout"
+                  id="pic2"
+                  onClick={() => this.handleSelect(fin11)}
+                  className={`layout ${
+                    this.state.selimg === fin11 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={fin11}
+                />
+              </div>
+              <div style={{ float: "left" }} class="mx-3">
+                <div className="my-4"> Layout 7</div>
+                {/* <h1 class="newitem">NEW</h1> */}
+                <img
+                  alt="layout"
+                  id="pic2"
+                  onClick={() => this.handleSelect(fin4)}
+                  className={`layout ${
+                    this.state.selimg === fin4 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={fin4}
+                />
+              </div>
+              <div style={{ float: "right" }} class="mx-3">
+                <div className="my-4"> Layout 8</div>
+                {/* <h1 class="newitem">NEW</h1> */}
+                <img
+                  alt="layout"
+                  id="pic2"
+                  onClick={() => this.handleSelect(fin5)}
+                  className={`layout ${
+                    this.state.selimg === fin5 ? "selected" : ""
+                  } `}
+                  width="150px"
+                  height="150px"
+                  role="button"
+                  src={fin5}
+                />
+              </div>
 
-              <img
-                alt="layout"
-                id="pic2"
-                onClick={() => this.handleSelect(frame5)}
-                className={`layout ${
-                  this.state.selimg === frame5 ? "selected" : ""
-                } `}
-                width="150px"
-                height="150px"
-                role="button"
-                src={frame5}
-              />
-              <div className="my-4"> Layout 3</div>
-              <img
-                alt="layout"
-                id="pic3"
-                onClick={() => this.handleSelect(frame4)}
-                //  onClick={this.handleSelect(frame3)}
-                className={`layout mb-5 ${
-                  this.state.selimg === frame4 ? "selected" : ""
-                } `}
-                width="150px"
-                height="150px"
-                role="button"
-                src={frame4}
-              />
               {/* <div className="my-4"> Layout 1</div>
               <img className="layout" width="150px" src={frame3} />
               <div className="my-4"> Layout 2</div>
