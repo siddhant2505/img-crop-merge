@@ -468,9 +468,9 @@ class App extends PureComponent {
                   src={fin4}
                 />
               </div>
-              <div style={{ float: "right" }} class="mx-3">
+              {/* <div style={{ float: "right" }} class="mx-3">
                 <div className="my-4"> Layout 8</div>
-                {/* <h1 class="newitem">NEW</h1> */}
+                <h1 class="newitem">NEW</h1>
                 <img
                   alt="layout"
                   id="pic8"
@@ -483,7 +483,7 @@ class App extends PureComponent {
                   role="button"
                   src={fin5}
                 />
-              </div>
+              </div> */}
 
               {/* <div className="my-4"> Layout 1</div>
               <img className="layout" width="150px" src={frame3} />
