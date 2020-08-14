@@ -202,6 +202,30 @@ class App extends PureComponent {
       { src: urPic, x: 0, y: 0 },
       { src: frame4, x: 0, y: 0 },
     ]).then((b64) => (document.getElementById("pic3").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fin1, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic4").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fin2, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic5").src = b64));
+    // mergeImages([
+    //   { src: urPic, x: 0, y: 0 },
+    //   { src: fin11, x: 0, y: 0 },
+    // ]).then((b64) => (document.getElementById("pic5").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fin4, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic7").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fin11, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic6").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fin5, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic8").src = b64));
 
     return (
       <div className="App">
@@ -278,7 +302,7 @@ class App extends PureComponent {
                   {this.state.layout}
                 </div>
               )}
-              <div style={{ float: "left" }} class="mx-3">
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
                 <div className="my-4"> Layout 1</div>
                 <img
                   id="pic1"
@@ -325,11 +349,27 @@ class App extends PureComponent {
                   src={frame4}
                 />
               </div>
-              <div style={{ float: "right" }} class="mx-3">
-                <div className="my-4"> Layout 4</div>
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 4
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-10px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
                 <img
                   alt="layout"
-                  id="pic2"
+                  id="pic4"
                   onClick={() => this.handleSelect(fin1)}
                   className={`layout ${
                     this.state.selimg === fin1 ? "selected" : ""
@@ -340,11 +380,24 @@ class App extends PureComponent {
                   src={fin1}
                 />
               </div>
-              <div style={{ float: "left" }} class="mx-3">
-                <div className="my-4"> Layout 5</div>
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 5
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-10px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
                 <img
                   alt="layout"
-                  id="pic2"
+                  id="pic5"
                   onClick={() => this.handleSelect(fin2)}
                   className={`layout ${
                     this.state.selimg === fin2 ? "selected" : ""
@@ -355,11 +408,27 @@ class App extends PureComponent {
                   src={fin2}
                 />
               </div>
-              <div style={{ float: "right" }} class="mx-3">
-                <div className="my-4"> Layout 6</div>
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 6
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-10px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
                 <img
                   alt="layout"
-                  id="pic2"
+                  id="pic6"
                   onClick={() => this.handleSelect(fin11)}
                   className={`layout ${
                     this.state.selimg === fin11 ? "selected" : ""
@@ -370,12 +439,25 @@ class App extends PureComponent {
                   src={fin11}
                 />
               </div>
-              <div style={{ float: "left" }} class="mx-3">
-                <div className="my-4"> Layout 7</div>
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 7
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-10px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
                 {/* <h1 class="newitem">NEW</h1> */}
                 <img
                   alt="layout"
-                  id="pic2"
+                  id="pic7"
                   onClick={() => this.handleSelect(fin4)}
                   className={`layout ${
                     this.state.selimg === fin4 ? "selected" : ""
@@ -391,7 +473,7 @@ class App extends PureComponent {
                 {/* <h1 class="newitem">NEW</h1> */}
                 <img
                   alt="layout"
-                  id="pic2"
+                  id="pic8"
                   onClick={() => this.handleSelect(fin5)}
                   className={`layout ${
                     this.state.selimg === fin5 ? "selected" : ""
