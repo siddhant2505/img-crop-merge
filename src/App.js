@@ -13,7 +13,7 @@ import frame5 from "./frame5-600.png";
 import fin2 from "./2.png";
 import fin1 from "./5.png";
 import fin4 from "./fin4.png";
-import fin5 from "./1.png";
+import fin5 from "./1 copy.png";
 //import fin4 from "./fin4.png";
 //import fin5 from "./fin5.png";
 // import fin6 from "./Fin6.png";
@@ -312,8 +312,8 @@ class App extends PureComponent {
                   className={`layout ${
                     this.state.selimg === frame3 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={frame3}
                 />
@@ -327,8 +327,8 @@ class App extends PureComponent {
                   className={`layout ${
                     this.state.selimg === frame5 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={frame5}
                 />
@@ -343,8 +343,8 @@ class App extends PureComponent {
                   className={`layout  ${
                     this.state.selimg === frame4 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={frame4}
                 />
@@ -374,8 +374,8 @@ class App extends PureComponent {
                   className={`layout ${
                     this.state.selimg === fin1 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={fin1}
                 />
@@ -402,8 +402,8 @@ class App extends PureComponent {
                   className={`layout ${
                     this.state.selimg === fin2 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={fin2}
                 />
@@ -433,13 +433,16 @@ class App extends PureComponent {
                   className={`layout ${
                     this.state.selimg === fin11 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={fin11}
                 />
               </div>
-              <div style={{ position: "relative", float: "left" }} class="mx-3">
+              <div
+                style={{ position: "relative", float: "left" }}
+                class="mx-3 "
+              >
                 <div className="my-4">
                   {" "}
                   Layout 7
@@ -462,28 +465,44 @@ class App extends PureComponent {
                   className={`layout ${
                     this.state.selimg === fin4 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={fin4}
                 />
               </div>
-              {/* <div style={{ float: "right" }} class="mx-3">
-                <div className="my-4"> Layout 8</div>
-                <h1 class="newitem">NEW</h1>
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3 "
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 8
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-10px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                {/* <h1 class="newitem">NEW</h1> */}
                 <img
                   alt="layout"
                   id="pic8"
                   onClick={() => this.handleSelect(fin5)}
-                  className={`layout ${
+                  className={`layout mb-4 ${
                     this.state.selimg === fin5 ? "selected" : ""
                   } `}
-                  width="150px"
-                  height="150px"
+                  width="135px"
+                  height="135px"
                   role="button"
                   src={fin5}
                 />
-              </div> */}
+              </div>
 
               {/* <div className="my-4"> Layout 1</div>
               <img className="layout" width="150px" src={frame3} />
