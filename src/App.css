@@ -63,7 +63,7 @@ h1 {
   }
 }
 .newitem {
-  font-size: calc(5px + 1.8vh);
+  font-size: calc(4px + 1.8vh);
   /*   line-height: calc(20px + 20vh); */
   /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
     0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;

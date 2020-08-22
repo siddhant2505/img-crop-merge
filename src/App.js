@@ -6,7 +6,7 @@ import "react-image-crop/dist/ReactCrop.css";
 // import frame from "./frame.png";
 // import frame1 from "./frame1.png";
 // import frame2 from "./frame2.png";
-import frame3 from "./frame3-600.png";
+//import frame3 from "./frame3-600.png";
 import frame4 from "./frame4-600.png";
 import frame5 from "./frame5-600.png";
 //import fin3 from "./6.png";
@@ -14,6 +14,20 @@ import fin2 from "./2.png";
 import fin1 from "./5.png";
 import fin4 from "./fin4.png";
 import fin5 from "./1 copy.png";
+import fhd1 from "./(01).png";
+import fhd2 from "./(2).png";
+import fhd3 from "./(3).png";
+import fhd4 from "./(4).png";
+import fhd5 from "./(5).png";
+import fgc1 from "./GC/11.png";
+import fgc2 from "./GC/22.png";
+//import fgc3 from "./GC/33.png";
+import fgc4 from "./GC/44.png";
+import fgc5 from "./GC/55.png";
+import fgc6 from "./GC/66.png";
+//import fgc7 from "./GC/77.png";
+import fgc8 from "./GC/88.png";
+
 //import fin4 from "./fin4.png";
 //import fin5 from "./fin5.png";
 // import fin6 from "./Fin6.png";
@@ -190,10 +204,10 @@ class App extends PureComponent {
       finalimg,
     } = this.state;
 
-    mergeImages([
-      { src: urPic, x: 0, y: 0 },
-      { src: frame3, x: 0, y: 0 },
-    ]).then((b64) => (document.getElementById("pic1").src = b64));
+    // mergeImages([
+    //   { src: urPic, x: 0, y: 0 },
+    //   { src: frame3, x: 0, y: 0 },
+    // ]).then((b64) => (document.getElementById("pic1").src = b64));
     mergeImages([
       { src: urPic, x: 0, y: 0 },
       { src: frame5, x: 0, y: 0 },
@@ -220,12 +234,56 @@ class App extends PureComponent {
     ]).then((b64) => (document.getElementById("pic7").src = b64));
     mergeImages([
       { src: urPic, x: 0, y: 0 },
-      { src: fin11, x: 0, y: 0 },
-    ]).then((b64) => (document.getElementById("pic6").src = b64));
+      { src: fin4, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic7").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fhd1, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic9").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fhd2, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic10").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fhd3, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic11").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fhd4, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic12").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fhd5, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic13").src = b64));
     mergeImages([
       { src: urPic, x: 0, y: 0 },
       { src: fin5, x: 0, y: 0 },
     ]).then((b64) => (document.getElementById("pic8").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fgc1, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic14").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fgc2, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic15").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fgc4, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic16").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fgc5, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic17").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fgc6, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic18").src = b64));
+    mergeImages([
+      { src: urPic, x: 0, y: 0 },
+      { src: fgc8, x: 0, y: 0 },
+    ]).then((b64) => (document.getElementById("pic19").src = b64));
 
     return (
       <div className="App">
@@ -241,9 +299,9 @@ class App extends PureComponent {
             />
           </a>
           <h3 style={{ float: "left" }} className="hid ">
-            <span style={{ color: "orange" }}> Happy</span>{" "}
-            <span style={{ color: "white" }}>Independence</span>
-            <span style={{ color: "green" }}> Day</span>
+            <span style={{ color: "orange" }}> Create</span>{" "}
+            <span style={{ color: "white" }}>Festival</span>
+            <span style={{ color: "green" }}> DP</span>
           </h3>
 
           <span class="text-center mr-sm-2 d-block mx-auto">
@@ -303,6 +361,396 @@ class App extends PureComponent {
                 </div>
               )}
               <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 1
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic14"
+                  onClick={() => this.handleSelect(fgc1)}
+                  className={`layout ${
+                    this.state.selimg === fgc1 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc1}
+                />
+              </div>
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 2
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic15"
+                  onClick={() => this.handleSelect(fgc2)}
+                  className={`layout ${
+                    this.state.selimg === fgc2 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc2}
+                />
+              </div>
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 3
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic16"
+                  onClick={() => this.handleSelect(fgc4)}
+                  className={`layout ${
+                    this.state.selimg === fgc4 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc4}
+                />
+              </div>
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 4
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic17"
+                  onClick={() => this.handleSelect(fgc5)}
+                  className={`layout ${
+                    this.state.selimg === fgc5 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc5}
+                />
+              </div>
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 5
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic18"
+                  onClick={() => this.handleSelect(fgc6)}
+                  className={`layout ${
+                    this.state.selimg === fgc6 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc6}
+                />
+              </div>
+
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 6
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic19"
+                  onClick={() => this.handleSelect(fgc8)}
+                  className={`layout ${
+                    this.state.selimg === fgc8 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc8}
+                />
+              </div>
+
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 7
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic9"
+                  onClick={() => this.handleSelect(fhd1)}
+                  className={`layout ${
+                    this.state.selimg === fhd1 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fhd1}
+                />
+              </div>
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 8
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic10"
+                  onClick={() => this.handleSelect(fhd2)}
+                  className={`layout ${
+                    this.state.selimg === fhd2 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fhd2}
+                />
+              </div>
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 9
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic11"
+                  onClick={() => this.handleSelect(fhd3)}
+                  className={`layout ${
+                    this.state.selimg === fhd3 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fhd3}
+                />
+              </div>
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 10
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic12"
+                  onClick={() => this.handleSelect(fhd4)}
+                  className={`layout ${
+                    this.state.selimg === fhd4 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fhd4}
+                />
+              </div>
+              <div style={{ position: "relative", float: "left" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 11
+                  <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1>
+                </div>
+                <img
+                  alt="layout"
+                  id="pic13"
+                  onClick={() => this.handleSelect(fhd5)}
+                  className={`layout ${
+                    this.state.selimg === fhd5 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fhd5}
+                />
+              </div>
+
+              <div
+                style={{ position: "relative", float: "right" }}
+                class="mx-3 "
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 12
+                  {/* <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1> */}
+                </div>
+                {/* <h1 class="newitem">NEW</h1> */}
+                <img
+                  alt="layout"
+                  id="pic7"
+                  onClick={() => this.handleSelect(fin4)}
+                  className={`layout ${
+                    this.state.selimg === fin4 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fin4}
+                />
+              </div>
+              <div
+                style={{ position: "relative", float: "left" }}
+                class="mx-3 "
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 13
+                  {/* <h1
+                    style={{
+                      display: "inline",
+                      position: "absolute",
+                      right: "-15px",
+                    }}
+                    className="newitem"
+                  >
+                    NEW
+                  </h1> */}
+                </div>
+                {/* <h1 class="newitem">NEW</h1> */}
+                <img
+                  alt="layout"
+                  id="pic8"
+                  onClick={() => this.handleSelect(fin5)}
+                  className={`layout ${
+                    this.state.selimg === fin5 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fin5}
+                />
+              </div>
+              {/* <div style={{ position: "relative", float: "left" }} class="mx-3">
                 <div className="my-4"> Layout 1</div>
                 <img
                   id="pic1"
@@ -317,9 +765,9 @@ class App extends PureComponent {
                   role="button"
                   src={frame3}
                 />
-              </div>
+              </div> */}
               <div style={{ float: "right" }} class="mx-3">
-                <div className="my-4"> Layout 2</div>
+                <div className="my-4"> Layout 14</div>
                 <img
                   alt="layout"
                   id="pic2"
@@ -334,7 +782,7 @@ class App extends PureComponent {
                 />
               </div>
               <div style={{ float: "left" }} class="mx-3">
-                <div className="my-4"> Layout 3</div>
+                <div className="my-4"> Layout 15</div>
                 <img
                   alt="layout"
                   id="pic3"
@@ -355,8 +803,8 @@ class App extends PureComponent {
               >
                 <div className="my-4">
                   {" "}
-                  Layout 4
-                  <h1
+                  Layout 16
+                  {/* <h1
                     style={{
                       display: "inline",
                       position: "absolute",
@@ -365,7 +813,7 @@ class App extends PureComponent {
                     className="newitem"
                   >
                     NEW
-                  </h1>
+                  </h1> */}
                 </div>
                 <img
                   alt="layout"
@@ -383,8 +831,8 @@ class App extends PureComponent {
               <div style={{ position: "relative", float: "left" }} class="mx-3">
                 <div className="my-4">
                   {" "}
-                  Layout 5
-                  <h1
+                  Layout 17
+                  {/* <h1
                     style={{
                       display: "inline",
                       position: "absolute",
@@ -393,7 +841,7 @@ class App extends PureComponent {
                     className="newitem"
                   >
                     NEW
-                  </h1>
+                  </h1> */}
                 </div>
                 <img
                   alt="layout"
@@ -414,93 +862,29 @@ class App extends PureComponent {
               >
                 <div className="my-4">
                   {" "}
-                  Layout 6
-                  <h1
+                  Layout 18
+                  {/* <h1
                     style={{
                       display: "inline",
                       position: "absolute",
-                      right: "-10px",
+                      right: "-15px",
                     }}
                     className="newitem"
                   >
                     NEW
-                  </h1>
+                  </h1> */}
                 </div>
                 <img
                   alt="layout"
                   id="pic6"
                   onClick={() => this.handleSelect(fin11)}
-                  className={`layout ${
+                  className={`layout mb-4 ${
                     this.state.selimg === fin11 ? "selected" : ""
                   } `}
                   width="135px"
                   height="135px"
                   role="button"
                   src={fin11}
-                />
-              </div>
-              <div
-                style={{ position: "relative", float: "left" }}
-                class="mx-3 "
-              >
-                <div className="my-4">
-                  {" "}
-                  Layout 7
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-10px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                {/* <h1 class="newitem">NEW</h1> */}
-                <img
-                  alt="layout"
-                  id="pic7"
-                  onClick={() => this.handleSelect(fin4)}
-                  className={`layout ${
-                    this.state.selimg === fin4 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fin4}
-                />
-              </div>
-              <div
-                style={{ position: "relative", float: "right" }}
-                class="mx-3 "
-              >
-                <div className="my-4">
-                  {" "}
-                  Layout 8
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-10px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                {/* <h1 class="newitem">NEW</h1> */}
-                <img
-                  alt="layout"
-                  id="pic8"
-                  onClick={() => this.handleSelect(fin5)}
-                  className={`layout mb-4 ${
-                    this.state.selimg === fin5 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fin5}
                 />
               </div>
 
