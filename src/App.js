@@ -23,7 +23,7 @@ import fgc1 from "./GC/11.png";
 import fgc2 from "./GC/22.png";
 //import fgc3 from "./GC/33.png";
 import fgc4 from "./GC/44.png";
-import fgc5 from "./GC/55.png";
+import fgc5 from "./GC/77.png";
 import fgc6 from "./GC/66.png";
 //import fgc7 from "./GC/77.png";
 import fgc8 from "./GC/88.png";
