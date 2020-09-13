@@ -360,189 +360,11 @@ class App extends PureComponent {
                   {this.state.layout}
                 </div>
               )}
+              
               <div style={{ position: "relative", float: "left" }} class="mx-3">
                 <div className="my-4">
                   {" "}
                   Layout 1
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-15px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                <img
-                  alt="layout"
-                  id="pic14"
-                  onClick={() => this.handleSelect(fgc1)}
-                  className={`layout ${
-                    this.state.selimg === fgc1 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fgc1}
-                />
-              </div>
-              <div
-                style={{ position: "relative", float: "right" }}
-                class="mx-3"
-              >
-                <div className="my-4">
-                  {" "}
-                  Layout 2
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-15px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                <img
-                  alt="layout"
-                  id="pic15"
-                  onClick={() => this.handleSelect(fgc2)}
-                  className={`layout ${
-                    this.state.selimg === fgc2 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fgc2}
-                />
-              </div>
-              <div style={{ position: "relative", float: "left" }} class="mx-3">
-                <div className="my-4">
-                  {" "}
-                  Layout 3
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-15px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                <img
-                  alt="layout"
-                  id="pic16"
-                  onClick={() => this.handleSelect(fgc4)}
-                  className={`layout ${
-                    this.state.selimg === fgc4 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fgc4}
-                />
-              </div>
-              <div
-                style={{ position: "relative", float: "right" }}
-                class="mx-3"
-              >
-                <div className="my-4">
-                  {" "}
-                  Layout 4
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-15px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                <img
-                  alt="layout"
-                  id="pic17"
-                  onClick={() => this.handleSelect(fgc5)}
-                  className={`layout ${
-                    this.state.selimg === fgc5 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fgc5}
-                />
-              </div>
-              <div style={{ position: "relative", float: "left" }} class="mx-3">
-                <div className="my-4">
-                  {" "}
-                  Layout 5
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-15px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                <img
-                  alt="layout"
-                  id="pic18"
-                  onClick={() => this.handleSelect(fgc6)}
-                  className={`layout ${
-                    this.state.selimg === fgc6 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fgc6}
-                />
-              </div>
-
-              <div
-                style={{ position: "relative", float: "right" }}
-                class="mx-3"
-              >
-                <div className="my-4">
-                  {" "}
-                  Layout 6
-                  <h1
-                    style={{
-                      display: "inline",
-                      position: "absolute",
-                      right: "-15px",
-                    }}
-                    className="newitem"
-                  >
-                    NEW
-                  </h1>
-                </div>
-                <img
-                  alt="layout"
-                  id="pic19"
-                  onClick={() => this.handleSelect(fgc8)}
-                  className={`layout ${
-                    this.state.selimg === fgc8 ? "selected" : ""
-                  } `}
-                  width="135px"
-                  height="135px"
-                  role="button"
-                  src={fgc8}
-                />
-              </div>
-
-              <div style={{ position: "relative", float: "left" }} class="mx-3">
-                <div className="my-4">
-                  {" "}
-                  Layout 7
                   <h1
                     style={{
                       display: "inline",
@@ -573,7 +395,7 @@ class App extends PureComponent {
               >
                 <div className="my-4">
                   {" "}
-                  Layout 8
+                  Layout 2
                   <h1
                     style={{
                       display: "inline",
@@ -601,7 +423,7 @@ class App extends PureComponent {
               <div style={{ position: "relative", float: "left" }} class="mx-3">
                 <div className="my-4">
                   {" "}
-                  Layout 9
+                  Layout 3
                   <h1
                     style={{
                       display: "inline",
@@ -632,7 +454,7 @@ class App extends PureComponent {
               >
                 <div className="my-4">
                   {" "}
-                  Layout 10
+                  Layout 4
                   <h1
                     style={{
                       display: "inline",
@@ -660,7 +482,7 @@ class App extends PureComponent {
               <div style={{ position: "relative", float: "left" }} class="mx-3">
                 <div className="my-4">
                   {" "}
-                  Layout 11
+                  Layout 5
                   <h1
                     style={{
                       display: "inline",
@@ -685,6 +507,131 @@ class App extends PureComponent {
                   src={fhd5}
                 />
               </div>
+              <div style={{ position: "relative", float: "right" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 6
+                  
+                </div>
+                <img
+                  alt="layout"
+                  id="pic14"
+                  onClick={() => this.handleSelect(fgc1)}
+                  className={`layout ${
+                    this.state.selimg === fgc1 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc1}
+                />
+              </div>
+              <div
+                style={{ position: "relative", float: "left" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 7
+                  
+                </div>
+                <img
+                  alt="layout"
+                  id="pic15"
+                  onClick={() => this.handleSelect(fgc2)}
+                  className={`layout ${
+                    this.state.selimg === fgc2 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc2}
+                />
+              </div>
+              <div style={{ position: "relative", float: "right" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 8
+                  
+                </div>
+                <img
+                  alt="layout"
+                  id="pic16"
+                  onClick={() => this.handleSelect(fgc4)}
+                  className={`layout ${
+                    this.state.selimg === fgc4 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc4}
+                />
+              </div>
+              <div
+                style={{ position: "relative", float: "left" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 9
+                  
+                </div>
+                <img
+                  alt="layout"
+                  id="pic17"
+                  onClick={() => this.handleSelect(fgc5)}
+                  className={`layout ${
+                    this.state.selimg === fgc5 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc5}
+                />
+              </div>
+              <div style={{ position: "relative", float: "right" }} class="mx-3">
+                <div className="my-4">
+                  {" "}
+                  Layout 10
+                  
+                </div>
+                <img
+                  alt="layout"
+                  id="pic18"
+                  onClick={() => this.handleSelect(fgc6)}
+                  className={`layout ${
+                    this.state.selimg === fgc6 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc6}
+                />
+              </div>
+
+              <div
+                style={{ position: "relative", float: "left" }}
+                class="mx-3"
+              >
+                <div className="my-4">
+                  {" "}
+                  Layout 11
+                  
+                </div>
+                <img
+                  alt="layout"
+                  id="pic19"
+                  onClick={() => this.handleSelect(fgc8)}
+                  className={`layout ${
+                    this.state.selimg === fgc8 ? "selected" : ""
+                  } `}
+                  width="135px"
+                  height="135px"
+                  role="button"
+                  src={fgc8}
+                />
+              </div>
+
 
               <div
                 style={{ position: "relative", float: "right" }}
